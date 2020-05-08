@@ -1,14 +1,13 @@
 form {
   margin:50px auto;
   width: 400px;
-  height: 440px;
+  height: 630px;
   border-radius: 10px;
   box-shadow: 0 0 20px black;
   text-align: center;
   background-color: lightseagreen;
 
 }
-
 
 .error {
   color:darkred;

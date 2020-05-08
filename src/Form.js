@@ -15,6 +15,13 @@ const Form = () => {
         <div>
             <form onSubmit={handleSubmit} noValidate>
                 <div className="box">
+                    <label className="label">Name:</label>
+                    <div>
+                        <input className={`${errors.name && "inputError"}`} type="text" name="name" values={values.name} onChange={handleChange} />
+                        {errors.name && <p className="error">{errors.name}</p>}
+                    </div>
+                </div>
+                <div className="box">
                     <label className="label">Email:</label>
                     <div>
                         <input className={`${errors.email && "inputError"}`} type="email" name="email" values={values.email} onChange={handleChange} />
